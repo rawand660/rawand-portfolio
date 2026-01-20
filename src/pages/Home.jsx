@@ -9,7 +9,7 @@ function Home() {
             <p className="hero-subtitle">Architecture & Photography</p>
             <h1>Rawand Hoshyar</h1>
             <p className="hero-description">
-              Architecture student at the University of East London, exploring the intersection 
+              Architecture student in London, exploring the intersection 
               of heritage, craft, and contemporary design through drawings, models, and instant film photography.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

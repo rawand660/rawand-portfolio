@@ -50,8 +50,7 @@ function Contact() {
             <div style={{ marginTop: 'var(--space-xl)' }}>
               <h3 style={{ marginBottom: 'var(--space-sm)' }}>Location</h3>
               <p style={{ color: 'var(--color-text-muted)' }}>
-                Based in London, UK<br />
-                Originally from Erbil, Kurdistan Region, Iraq
+                Based in London, UK
               </p>
             </div>
           </div>
