@@ -14,7 +14,7 @@ function Footer() {
             >
               Instagram
             </a>
-            <a href="mailto:rawandgardi6@gmail.com">
+            <a href="mailto:rawand.h.design@gmail.com">
               Email
             </a>
           </div>
