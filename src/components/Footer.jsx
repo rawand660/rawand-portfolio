@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
-  const currentYear = new Date().getFullYear()
-  
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-inner">
-          <p>© {currentYear} Rawand Hoshyar</p>
+          <p>© {new Date().getFullYear()} Rawand Hoshyar</p>
           <div className="footer-links">
+            <a href="mailto:rawand.h.design@gmail.com">Email</a>
             <a 
               href="https://instagram.com/rawand.iterations" 
               target="_blank" 
@@ -14,9 +15,7 @@ function Footer() {
             >
               Instagram
             </a>
-            <a href="mailto:rawand.h.design@gmail.com">
-              Email
-            </a>
+            <Link to="/contact">Contact</Link>
           </div>
         </div>
       </div>

@@ -32,7 +32,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -42,7 +41,6 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 /* Typography */
@@ -85,7 +83,7 @@ img {
 .container,
 .project-gallery,
 .project-hero,
-.shop-grid,
+.polaroid-grid,
 .project-grid {
   overflow: hidden;
 }
@@ -279,56 +277,73 @@ img {
   color: var(--color-text-muted);
 }
 
-/* Shop Grid */
-.shop-grid {
+/* Polaroid Grid */
+.polaroid-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--space-md);
+  gap: var(--space-lg);
 }
 
-.shop-item {
+.polaroid-item {
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.polaroid-item:hover {
+  transform: translateY(-4px);
+}
+
+.polaroid-frame {
   background: white;
-  border: 1px solid var(--color-border);
+  padding: var(--space-sm);
+  padding-bottom: var(--space-md);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   transition: box-shadow var(--transition);
 }
 
-.shop-item:hover {
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+.polaroid-item:hover .polaroid-frame {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
-.shop-image {
+.polaroid-image {
   aspect-ratio: 1;
   overflow: hidden;
   background: var(--color-bg-alt);
-  padding: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
-.shop-image img {
+.polaroid-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
-.shop-info {
-  padding: var(--space-sm);
+.polaroid-caption {
+  text-align: center;
 }
 
-.shop-info h3 {
+.polaroid-caption h3 {
   font-family: var(--font-sans);
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
 
-.shop-price {
-  font-size: 0.875rem;
+.polaroid-caption p {
+  font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-bottom: var(--space-sm);
 }
 
-.shop-status {
-  font-size: 0.75rem;
-  color: var(--color-accent);
+.polaroid-note {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  max-width: 600px;
+}
+
+.polaroid-note p {
+  color: var(--color-text-muted);
+  font-style: italic;
 }
 
 /* Button Styles */
@@ -365,7 +380,10 @@ img {
 
 /* About Section */
 .about-content {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
 }
 
 .about-text p {
@@ -376,6 +394,13 @@ img {
 .about-text p:first-of-type {
   font-size: 1.25rem;
   color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
 }
 
 /* Contact Section */
@@ -519,6 +544,19 @@ img {
   cursor: default;
 }
 
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.lightbox-caption {
+  color: white;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 .lightbox-close {
   position: absolute;
   top: var(--space-md);
@@ -579,6 +617,7 @@ img {
   }
   
   .hero {
+    min-height: calc(100vh - 150px);
     padding: var(--space-lg) 0;
   }
   
@@ -587,20 +626,17 @@ img {
     gap: var(--space-md);
   }
   
-  .shop-grid {
+  .polaroid-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-sm);
   }
   
-  .shop-image {
+  .polaroid-frame {
     padding: var(--space-xs);
+    padding-bottom: var(--space-sm);
   }
   
-  .shop-info {
-    padding: var(--space-xs);
-  }
-  
-  .shop-info h3 {
+  .polaroid-caption h3 {
     font-size: 0.8rem;
   }
   

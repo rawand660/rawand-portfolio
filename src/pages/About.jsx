@@ -37,7 +37,7 @@ function About() {
               
               <div style={{ marginTop: 'var(--space-lg)' }}>
                 <h3 style={{ marginBottom: 'var(--space-sm)' }}>Education</h3>
-                <p>BSc (Hons) Architecture (ARB/RIBA Part 1)<br />University of East London<br />2022 - Present</p>
+                <p>BSc (Hons) Architecture (ARB/RIBA Part 1)<br />University of East London<br />2022 – Present</p>
               </div>
               
               <div style={{ marginTop: 'var(--space-md)' }}>

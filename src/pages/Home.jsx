@@ -16,8 +16,8 @@ function Home() {
               <Link to="/work" className="btn btn-primary">
                 View Work
               </Link>
-              <Link to="/shop" className="btn">
-                Shop Polaroids
+              <Link to="/polaroids" className="btn">
+                Polaroids
               </Link>
             </div>
           </div>

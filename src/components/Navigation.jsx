@@ -5,15 +5,14 @@ function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
   
-  const isActive = (path) => {
-    if (path === '/') return location.pathname === '/'
-    return location.pathname.startsWith(path)
-  }
+  const isActive = (path) => location.pathname === path ? 'active' : ''
+  
+  const closeMenu = () => setIsOpen(false)
 
   return (
     <nav className="nav">
       <div className="nav-inner">
-        <Link to="/" className="nav-logo">
+        <Link to="/" className="nav-logo" onClick={closeMenu}>
           Rawand Hoshyar
         </Link>
         
@@ -29,38 +28,22 @@ function Navigation() {
         
         <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           <li>
-            <Link 
-              to="/work" 
-              className={isActive('/work') ? 'active' : ''}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/work" className={isActive('/work')} onClick={closeMenu}>
               Work
             </Link>
           </li>
           <li>
-            <Link 
-              to="/shop" 
-              className={isActive('/shop') ? 'active' : ''}
-              onClick={() => setIsOpen(false)}
-            >
-              Shop
+            <Link to="/polaroids" className={isActive('/polaroids')} onClick={closeMenu}>
+              Polaroids
             </Link>
           </li>
           <li>
-            <Link 
-              to="/about" 
-              className={isActive('/about') ? 'active' : ''}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/about" className={isActive('/about')} onClick={closeMenu}>
               About
             </Link>
           </li>
           <li>
-            <Link 
-              to="/contact" 
-              className={isActive('/contact') ? 'active' : ''}
-              onClick={() => setIsOpen(false)}
-            >
+            <Link to="/contact" className={isActive('/contact')} onClick={closeMenu}>
               Contact
             </Link>
           </li>
