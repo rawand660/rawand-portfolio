@@ -17,10 +17,12 @@ The design retains all of the existing structure of the warehouse while adding n
       '/images/projects/slipway-5',
     ]
   },
-  'separation-for-the-actor': {
-    fullDescription: `This project, based in London, explores how theatres could create spaces of separation and distancing for actors with social anxiety, particularly children, to allow for a stepping stone into the world of theatre.
+  'umbaukunst': {
+    fullDescription: `Umbaukunst is a compound of Umbau (transformation) and Baukunst (building-art). It suggests that the act of adaptive reuse can treat the existing as a tool rather than a constraint — transforming in a way that both respects and exemplifies what is already there, so the new architecture works in tandem with the site rather than clashing.
 
-By using Aldo Rossi's Teatro del Mondo as the key precedent, three methods of separation explore different ways of creating a space for actors to hone their craft without the pressures of gazing eyes: The Inhabited Framework, The Subterranean Wells, and The Infiltrated Voids.`,
+Situated on London's South Bank next to the OXO Tower, the project proposes a technical theatre school for younger students drawn to the field but underserved by the few existing technical routes, which select for those who already know their aptitude. The school connects to a theatre and exhibition gallery that gives students a space to put the skills they acquire on display. It reuses Barge Crescent, a recently completed office building by Henley Halebrown, which connects to the theatre and gallery situated within the Bargehouse — an old masonry and steel warehouse constructed around the 1930s as part of Stamford Wharf.
+
+The design responds differently to each building. Given that Barge Crescent is new, extra care is taken to preserve the existing structure and facade. The school operates as a cityscape where learning is experienced through the architecture: floor cuts create glimpses between levels, and timber rooms sit within the existing frame as spaces to be discovered rather than assigned. In the Bargehouse, the architecture itself is the performance — put on display via the facade, where the interplay of exposed brick, render, and steel hints at the internal activities from the street. The Barge Crescent is found by its students. The Bargehouse is found as it stands.`,
     heroImage: '/images/projects/seperation-hero',
     images: [
       '/images/projects/seperation-1',

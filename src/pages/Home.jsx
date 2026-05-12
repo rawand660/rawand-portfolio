@@ -51,11 +51,11 @@ function Home() {
               </div>
             </Link>
             
-            <Link to="/work/separation-for-the-actor" className="project-card">
+            <Link to="/work/umbaukunst" className="project-card">
               <div className="project-image">
-                <img 
-                  src="/images/projects/seperation-hero.png" 
-                  alt="Separation for the Actor"
+                <img
+                  src="/images/projects/seperation-hero.png"
+                  alt="Umbaukunst: Architecture, as Found"
                   onError={(e) => {
                     if (e.target.src.endsWith('.png')) {
                       e.target.src = '/images/projects/seperation-hero.jpg'
@@ -66,8 +66,8 @@ function Home() {
                 />
               </div>
               <div className="project-info">
-                <h3>Separation for the Actor</h3>
-                <p className="project-meta">Southwark, London · 2026</p>
+                <h3>Umbaukunst: Architecture, as Found</h3>
+                <p className="project-meta">South Bank, London · 2026</p>
               </div>
             </Link>
             

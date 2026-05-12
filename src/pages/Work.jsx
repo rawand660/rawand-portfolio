@@ -12,13 +12,13 @@ export const projects = [
     image: '/images/projects/slipway-hero'
   },
   {
-    slug: 'separation-for-the-actor',
-    title: 'Separation for the Actor',
-    description: 'A youth performing arts center exploring theatrical separation through the adaptive reuse of the Bargehouse.',
-    location: 'Southwark, London',
+    slug: 'umbaukunst',
+    title: 'Umbaukunst: Architecture, as Found',
+    description: 'A technical theatre school and public theatre formed through the adaptive reuse of two contrasting Southbank buildings — the Bargehouse and Barge Crescent.',
+    location: 'South Bank, London',
     year: '2026',
-    type: 'Cultural / Educational',
-    area: '2,400 m²',
+    type: 'Theatre School / Cultural',
+    area: '3,200 m²',
     image: '/images/projects/seperation-hero'
   },
   {
