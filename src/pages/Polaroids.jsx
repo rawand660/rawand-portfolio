@@ -41,6 +41,61 @@ const polaroids = [
     id: 8,
     title: 'Overgrown',
     image: '/images/polaroids/polaroid-8.png'
+  },
+  {
+    id: 9,
+    title: 'White Portico',
+    image: '/images/polaroids/polaroid-9.jpg'
+  },
+  {
+    id: 10,
+    title: 'Tower in Fog',
+    image: '/images/polaroids/polaroid-10.jpg'
+  },
+  {
+    id: 11,
+    title: 'Octagonal Pavilion',
+    image: '/images/polaroids/polaroid-11.jpg'
+  },
+  {
+    id: 12,
+    title: 'Ivy',
+    image: '/images/polaroids/polaroid-12.jpg'
+  },
+  {
+    id: 13,
+    title: 'Candlelit Colonnade',
+    image: '/images/polaroids/polaroid-13.jpg'
+  },
+  {
+    id: 14,
+    title: 'Vessel',
+    image: '/images/polaroids/polaroid-14.jpg'
+  },
+  {
+    id: 15,
+    title: 'Rose Window',
+    image: '/images/polaroids/polaroid-15.jpg'
+  },
+  {
+    id: 16,
+    title: 'Still Water',
+    image: '/images/polaroids/polaroid-16.jpg'
+  },
+  {
+    id: 17,
+    title: 'Lookout',
+    image: '/images/polaroids/polaroid-17.jpg'
+  },
+  {
+    id: 18,
+    title: 'Ljubljanica',
+    image: '/images/polaroids/polaroid-18.jpg'
+  },
+  {
+    id: 19,
+    title: 'Chapel in Mist',
+    image: '/images/polaroids/polaroid-19.jpg'
   }
 ]
 
