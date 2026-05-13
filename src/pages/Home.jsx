@@ -13,11 +13,14 @@ function Home() {
               of heritage, craft, and contemporary design through drawings, models, and instant film photography.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/work" className="btn btn-primary">
-                View Work
+              <Link to="/work" className="btn">
+                Work
               </Link>
               <Link to="/polaroids" className="btn">
                 Polaroids
+              </Link>
+              <Link to="/writings" className="btn">
+                Writing
               </Link>
             </div>
           </div>

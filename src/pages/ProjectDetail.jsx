@@ -15,6 +15,11 @@ The design retains all of the existing structure of the warehouse while adding n
       '/images/projects/slipway-3',
       '/images/projects/slipway-4',
       '/images/projects/slipway-5',
+      '/images/projects/slipway-6',
+      '/images/projects/slipway-7',
+      '/images/projects/slipway-8',
+      '/images/projects/slipway-9',
+      '/images/projects/slipway-10',
     ]
   },
   'umbaukunst': {
@@ -30,6 +35,11 @@ The design responds differently to each building. Given that Barge Crescent is n
       '/images/projects/seperation-3',
       '/images/projects/seperation-4',
       '/images/projects/seperation-5',
+      '/images/projects/seperation-6',
+      '/images/projects/seperation-7',
+      '/images/projects/seperation-8',
+      '/images/projects/seperation-9',
+      '/images/projects/seperation-10',
     ]
   },
   'edens-workshop': {
@@ -86,19 +96,24 @@ function ProjectDetail() {
   const ImageWithFallback = ({ baseSrc, alt, onClick, className }) => {
     const [src, setSrc] = useState(`${baseSrc}.png`)
     const [finalSrc, setFinalSrc] = useState(null)
-    
+    const [hidden, setHidden] = useState(false)
+
     const handleError = () => {
       if (src.endsWith('.png')) {
         setSrc(`${baseSrc}.jpg`)
+      } else {
+        setHidden(true)
       }
     }
 
     const handleLoad = () => {
       setFinalSrc(src)
     }
-    
+
+    if (hidden) return null
+
     return (
-      <img 
+      <img
         src={src}
         alt={alt}
         className={className}

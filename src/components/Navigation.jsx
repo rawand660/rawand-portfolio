@@ -38,6 +38,11 @@ function Navigation() {
             </Link>
           </li>
           <li>
+            <Link to="/writings" className={isActive('/writings')} onClick={closeMenu}>
+              Writings
+            </Link>
+          </li>
+          <li>
             <Link to="/about" className={isActive('/about')} onClick={closeMenu}>
               About
             </Link>
