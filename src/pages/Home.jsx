@@ -1,104 +1,90 @@
 import { Link } from 'react-router-dom'
 
+const featured = [
+  {
+    slug: 'umbaukunst',
+    title: 'Umbaukunst: Architecture, as Found',
+    image: '/images/projects/seperation-hero',
+    meta: 'South Bank, London · 2026',
+    note: 'A theatre school and gallery wrought out of the Bargehouse and Barge Crescent.'
+  },
+  {
+    slug: 'anchored-in-time',
+    title: 'Anchored in Time',
+    image: '/images/projects/door-hero',
+    meta: 'Brooking Collection · 2025',
+    note: 'An 1864 timber door translated through charcoal, plaster and timber.'
+  },
+  {
+    slug: 'slipway-public-house',
+    title: 'The Slipway Public House',
+    image: '/images/projects/slipway-hero',
+    meta: 'Faversham, UK · 2025',
+    note: 'Bringing the sideways ship launch back to a town that lost it in 1970.'
+  }
+]
+
 function Home() {
   return (
     <div className="page">
       <div className="container">
         <section className="hero">
           <div className="hero-content fade-in">
-            <p className="hero-subtitle">Architecture & Photography</p>
-            <h1>Rawand Hoshyar</h1>
+            <p className="hero-subtitle">Rawand Hoshyar, Architecture, London</p>
+            <h1>
+              Appreciating what is<br />already&nbsp;there.
+            </h1>
             <p className="hero-description">
-              Architecture student in London, exploring the intersection 
-              of heritage, craft, and contemporary design through drawings, models, and instant film photography.
+              I am a Part 1 Architectural Assistant. I enjoy working with a plethora of
+              media such as charcoal, plaster, ink, timber, and digital. A lot of my projects
+              focus on adaptive reuse; I enjoy working with the existing rather than treating
+              it as a constraint.
             </p>
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/work" className="btn">
-                Work
-              </Link>
-              <Link to="/polaroids" className="btn">
-                Polaroids
-              </Link>
-              <Link to="/writings" className="btn">
-                Writing
-              </Link>
+            <div className="hero-actions">
+              <Link to="/work" className="btn btn-primary">Selected work</Link>
+              <Link to="/polaroids" className="btn">Polaroids</Link>
+              <Link to="/writings" className="btn">Writing</Link>
             </div>
           </div>
         </section>
-        
-        {/* Featured Projects Preview */}
+
         <section className="section">
           <div className="section-header">
+            <p className="section-eyebrow">Three to start with</p>
             <h2 className="section-title">Selected Work</h2>
-            <p className="section-subtitle">Recent architectural projects</p>
+            <p className="section-subtitle">
+              A theatre school, a door, a public house. Pick where to begin.
+            </p>
           </div>
-          
-          <div className="project-grid">
-            <Link to="/work/slipway-public-house" className="project-card">
-              <div className="project-image">
-                <img 
-                  src="/images/projects/slipway-hero.png" 
-                  alt="The Slipway Public House"
-                  onError={(e) => {
-                    if (e.target.src.endsWith('.png')) {
-                      e.target.src = '/images/projects/slipway-hero.jpg'
-                    } else {
-                      e.target.style.display = 'none'
-                    }
-                  }}
-                />
-              </div>
-              <div className="project-info">
-                <h3>The Slipway Public House</h3>
-                <p className="project-meta">Faversham, UK · 2025</p>
-              </div>
-            </Link>
-            
-            <Link to="/work/umbaukunst" className="project-card">
-              <div className="project-image">
-                <img
-                  src="/images/projects/seperation-hero.png"
-                  alt="Umbaukunst: Architecture, as Found"
-                  onError={(e) => {
-                    if (e.target.src.endsWith('.png')) {
-                      e.target.src = '/images/projects/seperation-hero.jpg'
-                    } else {
-                      e.target.style.display = 'none'
-                    }
-                  }}
-                />
-              </div>
-              <div className="project-info">
-                <h3>Umbaukunst: Architecture, as Found</h3>
-                <p className="project-meta">South Bank, London · 2026</p>
-              </div>
-            </Link>
-            
-            <Link to="/work/edens-workshop" className="project-card">
-              <div className="project-image">
-                <img 
-                  src="/images/projects/eden-hero.png" 
-                  alt="Eden's Workshop"
-                  onError={(e) => {
-                    if (e.target.src.endsWith('.png')) {
-                      e.target.src = '/images/projects/eden-hero.jpg'
-                    } else {
-                      e.target.style.display = 'none'
-                    }
-                  }}
-                />
-              </div>
-              <div className="project-info">
-                <h3>Eden's Workshop</h3>
-                <p className="project-meta">King's Cross, London · 2024</p>
-              </div>
-            </Link>
+
+          <div className="featured-grid">
+            {featured.map((p, i) => (
+              <Link key={p.slug} to={`/work/${p.slug}`} className="featured-card">
+                <span className="featured-num">{String(i + 1).padStart(2, '0')}</span>
+                <div className="project-image">
+                  <img
+                    src={`${p.image}.png`}
+                    alt={p.title}
+                    onError={(e) => {
+                      if (e.target.src.endsWith('.png')) {
+                        e.target.src = `${p.image}.jpg`
+                      } else {
+                        e.target.style.display = 'none'
+                      }
+                    }}
+                  />
+                </div>
+                <div className="project-info">
+                  <h3>{p.title}</h3>
+                  <p className="project-meta">{p.meta}</p>
+                  <p className="featured-note">{p.note}</p>
+                </div>
+              </Link>
+            ))}
           </div>
-          
+
           <div className="text-center mt-lg">
-            <Link to="/work" className="btn">
-              View All Projects
-            </Link>
+            <Link to="/work" className="btn">All seven projects</Link>
           </div>
         </section>
       </div>

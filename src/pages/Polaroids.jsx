@@ -137,7 +137,7 @@ function Polaroids() {
           <div className="section-header fade-in">
             <h1 className="section-title">Polaroids</h1>
             <p className="section-subtitle">
-              Instant film photography — capturing architecture, light, and moments around London.
+              Instant film photography, capturing architecture, light, and moments.
             </p>
           </div>
           
@@ -167,14 +167,6 @@ function Polaroids() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="polaroid-note fade-in">
-            <p>
-              Shot on Polaroid 600 and Instax Wide. The unpredictability of instant film 
-              mirrors something I find valuable in architecture — the beauty of imperfection, 
-              the traces of process, the happy accidents.
-            </p>
           </div>
         </section>
       </div>

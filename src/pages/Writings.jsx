@@ -2,17 +2,17 @@ const writings = [
   {
     slug: 'brodsky-pichler-baukunst-on-paper',
     title: 'Brodsky and Pichler: Baukunst on Paper',
-    course: 'History & Theory — 3rd Year',
+    course: 'History & Theory, 3rd Year',
     year: '2025',
-    abstract: `An exploration of paper architecture and the idea of Baukunst — building-art — examining how Walter Pichler, Peter Zumthor, Brodsky & Utkin, and Peter Märkli use drawing not as preparation for building but as architecture in its own right, where materiality, atmosphere, and enclosure are worked out on paper before stone.`,
+    abstract: `An exploration of paper architecture and the idea of Baukunst (building-art), examining how Walter Pichler, Peter Zumthor, Brodsky & Utkin, and Peter Märkli use drawing not as preparation for building but as architecture in its own right, where materiality, atmosphere, and enclosure are worked out on paper before stone.`,
     pdf: '/writings/brodsky-pichler-baukunst-on-paper.pdf'
   },
   {
     slug: 'patty-hopkins-gendered-erasure',
     title: 'Patty Hopkins: A Case Study in Gendered Erasure within British High-Tech',
-    course: 'History & Theory — 2nd Year',
+    course: 'History & Theory, 2nd Year',
     year: '2024',
-    abstract: `In 2014 the BBC photoshopped Patty Hopkins out of an RIBA group portrait of the architects who pioneered British High-Tech. This essay uses that moment of erasure as a critical entry point — drawing on Critical Theory and a first-hand interview with Dr Deborah Benrós — to examine how female architects have been consistently marginalised in architectural discourse, and what that tells us about systemic gender bias within the profession.`,
+    abstract: `In 2014 the BBC photoshopped Patty Hopkins out of an RIBA group portrait of the architects who pioneered British High-Tech. This essay uses that moment of erasure as a critical entry point, drawing on Critical Theory and a first-hand interview with Dr Deborah Benrós, to examine how female architects have been consistently marginalised in architectural discourse, and what that tells us about systemic gender bias within the profession.`,
     pdf: '/writings/patty-hopkins-gendered-erasure.pdf'
   }
 ]

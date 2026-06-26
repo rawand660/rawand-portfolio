@@ -5,44 +5,41 @@ function About() {
         <section className="section">
           <div className="about-content fade-in">
             <div className="about-text">
-              <h1 style={{ marginBottom: 'var(--space-md)' }}>About</h1>
-              
+              <p className="section-eyebrow">A short note</p>
+              <h1 style={{ marginBottom: 'var(--space-md)', fontStyle: 'italic' }}>About</h1>
+
               <p>
-                I'm an architecture student in London, currently in my third year. 
-                My work explores themes of heritage, craft, and the relationship 
-                between buildings and their landscapes.
+                I'm Rawand, a Part 1 Architectural Assistant based in London. A lot of
+                my projects focus on adaptive reuse. I enjoy using the existing conditions
+                as a tool rather than a constraint.
               </p>
-              
+
               <p>
-                The projects in this portfolio range from adaptive reuse, breathing 
-                new life into existing structures, to new builds and pavilions. 
-                Each project attempts to understand and respond to its context, 
-                whether that's the boat-building heritage of Faversham or the 
-                canal communities of King's Cross.
+                The process of transforming what is already on site into something new is
+                what I find just as enjoyable as the end result, if not more so.
               </p>
-              
+
               <p>
-                Alongside my architectural work, I photograph on instant film. 
-                The imperfections and unpredictability of polaroids mirror 
-                something I find valuable in architecture: the beauty of the 
-                handmade, the traces of process, the acceptance of happy accidents.
+                My focus on adaptive reuse began in my second year at UEL in Unit B,
+                studying under Luke Jones and Toshiya Kogawa. This was expanded and
+                developed further in my third year in Unit C under Philip Christou
+                and Rob Whitlock.
               </p>
-              
-              <p>
-                I work across media, pencil drawings, physical models, digital 
-                fabrication, believing that different tools reveal different 
-                qualities in a design. The hand drawing discovers something 
-                the computer cannot, and vice versa.
-              </p>
-              
-              <div style={{ marginTop: 'var(--space-lg)' }}>
-                <h3 style={{ marginBottom: 'var(--space-sm)' }}>Education</h3>
-                <p>BSc (Hons) Architecture (ARB/RIBA Part 1)<br />University of East London<br />2022 – Present</p>
-              </div>
-              
-              <div style={{ marginTop: 'var(--space-md)' }}>
-                <h3 style={{ marginBottom: 'var(--space-sm)' }}>Location</h3>
-                <p>Based in London, UK</p>
+
+              <div className="about-meta">
+                <div>
+                  <h3>Education</h3>
+                  <p>
+                    BSc (Hons) Architecture<br />
+                    ARB / RIBA Part 1<br />
+                    University of East London<br />
+                    2022 – 2026
+                  </p>
+                </div>
+                <div>
+                  <h3>Based in</h3>
+                  <p>London, UK</p>
+                </div>
               </div>
             </div>
           </div>

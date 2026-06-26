@@ -4,7 +4,7 @@ function Contact() {
       <div className="container">
         <section className="section">
           <div className="contact-content fade-in">
-            <h1 style={{ marginBottom: 'var(--space-sm)' }}>Contact</h1>
+            <h1 style={{ marginBottom: 'var(--space-sm)', fontStyle: 'italic' }}>Contact</h1>
             <p style={{ color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
               For inquiries about architectural work or collaborations, please get in touch.
             </p>

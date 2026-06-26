@@ -5,9 +5,9 @@ import { projects } from './Work'
 // Extended project data with full descriptions
 const projectDetails = {
   'slipway-public-house': {
-    fullDescription: `This project re-uses an old warehouse in the north of Urban Faversham, an old town with a rich history of boat making. The program proposes to reimagine the space as a public house where the public is taught of the traditional methods of boat making along with an annual ceremony for a gathering to celebrate a completion of a boat.
+    fullDescription: `This project reuses an old warehouse in the north of Faversham, an old town with a rich history of boat making. The programme proposes to reimagine the space as a public house where the public is taught the traditional methods of boat making, along with an annual ceremony to celebrate the completion of a boat.
 
-The design retains all of the existing structure of the warehouse while adding new steel trusses to strengthen the roof to support the weight of the rooftop seating. The addition of the tower to access the rooftop and the dock to allow for accessible access for the annual ceremony.`,
+The design retains all of the existing structure of the warehouse while adding new steel trusses to strengthen the roof and support the weight of the rooftop seating. A new tower provides access to the rooftop, and a dock allows accessible entry for the annual ceremony.`,
     heroImage: '/images/projects/slipway-hero',
     images: [
       '/images/projects/slipway-1',
@@ -23,11 +23,11 @@ The design retains all of the existing structure of the warehouse while adding n
     ]
   },
   'umbaukunst': {
-    fullDescription: `Umbaukunst is a compound of Umbau (transformation) and Baukunst (building-art). It suggests that the act of adaptive reuse can treat the existing as a tool rather than a constraint — transforming in a way that both respects and exemplifies what is already there, so the new architecture works in tandem with the site rather than clashing.
+    fullDescription: `Umbaukunst is a compound of Umbau (transformation) and Baukunst (building-art). It suggests that the act of adaptive reuse can treat the existing as a tool rather than a constraint, transforming in a way that both respects and exemplifies what is already there, so the new architecture works in tandem with the site rather than clashing.
 
-Situated on London's South Bank next to the OXO Tower, the project proposes a technical theatre school for younger students drawn to the field but underserved by the few existing technical routes, which select for those who already know their aptitude. The school connects to a theatre and exhibition gallery that gives students a space to put the skills they acquire on display. It reuses Barge Crescent, a recently completed office building by Henley Halebrown, which connects to the theatre and gallery situated within the Bargehouse — an old masonry and steel warehouse constructed around the 1930s as part of Stamford Wharf.
+Situated on London's South Bank next to the OXO Tower, the project proposes a technical theatre school for younger students drawn to the field but underserved by the few existing technical routes, which select for those who already know their aptitude. The school connects to a theatre and exhibition gallery that gives students a space to put the skills they acquire on display. It reuses Barge Crescent, a recently completed office building by Henley Halebrown, which connects to the theatre and gallery situated within the Bargehouse, an old masonry and steel warehouse constructed around the 1930s as part of Stamford Wharf.
 
-The design responds differently to each building. Given that Barge Crescent is new, extra care is taken to preserve the existing structure and facade. The school operates as a cityscape where learning is experienced through the architecture: floor cuts create glimpses between levels, and timber rooms sit within the existing frame as spaces to be discovered rather than assigned. In the Bargehouse, the architecture itself is the performance — put on display via the facade, where the interplay of exposed brick, render, and steel hints at the internal activities from the street. The Barge Crescent is found by its students. The Bargehouse is found as it stands.`,
+The design responds differently to each building. Given that Barge Crescent is new, extra care is taken to preserve the existing structure and facade. The school operates as a cityscape where learning is experienced through the architecture: floor cuts create glimpses between levels, and timber rooms sit within the existing frame as spaces to be discovered rather than assigned. In the Bargehouse, the architecture itself is the performance, put on display via the facade, where the interplay of exposed brick, render, and steel hints at the internal activities from the street. The Barge Crescent is found by its students. The Bargehouse is found as it stands.`,
     heroImage: '/images/projects/seperation-hero',
     images: [
       '/images/projects/seperation-1',
@@ -43,7 +43,7 @@ The design responds differently to each building. Given that Barge Crescent is n
     ]
   },
   'edens-workshop': {
-    fullDescription: `Situated on Regent's Canal in King's Cross, this project proposes a workshop and seedbank for the local residents of the site. The program consists of a workshop on the upper floor for seeds to be processed and dried to then be stored in the climate controlled lower storage facilities which are cooled by submerging into the ground.`,
+    fullDescription: `Situated on Regent's Canal in King's Cross, this project proposes a workshop and seedbank for the local residents of the site. The programme consists of a workshop on the upper floor where seeds are processed and dried, to then be stored in the climate-controlled lower storage facilities, which are cooled by submerging into the ground.`,
     heroImage: '/images/projects/eden-hero',
     images: [
       '/images/projects/eden-1',
@@ -62,6 +62,67 @@ The design responds differently to each building. Given that Barge Crescent is n
       '/images/projects/currents-3',
       '/images/projects/currents-4',
       '/images/projects/currents-5',
+    ]
+  },
+  'anchored-in-time': {
+    fullDescription: `The narrative of this project begins with a single object: a dense and grand wooden door from 1864, held in the Brooking Collection, the world's largest archive of architectural details.
+
+The door wears two faces. The side facing the elements is dark timber strips backing two metal barricades that encompass it. The side facing the interior is a white-finished timber with a cross pattern, formed by alternating groove cuts between the upper and lower planks. The locking mechanism relies on a large timber piece slotting through metal hooks; the cast-iron handle is forged as a spiral unto itself.
+
+Charcoal drawings imagine the life of the door before it was archived: a menacing, dark object set in castle-like environments, stone exteriors on a high mound, cold interiors. From those drawings a plaster and timber model was made, taking Walter Pichler's drawings as a precedent for hinge and threshold. The plaster floor carries stone carvings to anchor the door's previous life into the model itself.`,
+    heroImage: '/images/projects/door-hero',
+    images: [
+      '/images/projects/door-1',
+      '/images/projects/door-2',
+      '/images/projects/door-3',
+      '/images/projects/door-4',
+      '/images/projects/door-5',
+      '/images/projects/door-6',
+      '/images/projects/door-7',
+    ]
+  },
+  'art-of-trace': {
+    fullDescription: `A Year 1 collaborative project on the Regent's Canal in De Beauvoir Town. The site's identity was anchored by an unbroken layer of graffiti along its brick walls, a community language written and overwritten every week. The brief asked us to design an encounter with that community; we answered with a device for two people to draw together.
+
+Early iterations leaned toward The Singing Bridge, transferring the reverb of cyclists' bells from one side of the canal underpass to the other. It was scrapped as too unrealistic. We returned to the wall, to the graffiti, and to the idea of trace.
+
+The device is built around mimicry. One handle leads, the other follows. Extensions branch off the main body so smaller members swing chaotically as the device moves, giving the trace its own life. The handles were iterated until they carried the void of two hands, ergonomic but always two-handed, so the object refuses to be used alone.
+
+The 1:1 mock-up was bolted to a plank and clamped onto the graffiti wall from above. The wall fought back: bricks bulging in places, withered in others, compromising the canvas. That friction, the wall as imperfect collaborator, is what made the install feel honest.`,
+    heroImage: '/images/projects/trace-hero',
+    images: [
+      '/images/projects/trace-1',
+      '/images/projects/trace-2',
+      '/images/projects/trace-3',
+      '/images/projects/trace-4',
+      '/images/projects/trace-5',
+      '/images/projects/trace-6',
+      '/images/projects/trace-7',
+      '/images/projects/trace-8',
+      '/images/projects/trace-9',
+      '/images/projects/trace-10',
+      '/images/projects/trace-11',
+    ]
+  },
+  'holistic-sustainability': {
+    fullDescription: `A technical case study of 1718 Verbiest, AgwA's 2020 conversion of an old warehouse in Sint-Jans-Molenbeek, Brussels, into an artist's studio with a family home above.
+
+The study reads the project as a holistic position on sustainability rather than a checklist. All of the existing structure and foundation is reused; new CLT columns rest on the original concrete raft to strengthen it. The architects calculated that the embodied carbon of fully insulating every room would exceed the embodied carbon of artificially heating the interior, so insulation is applied selectively, in hempcrete, only where it pays back. Concrete and steel are virtually banned from the new work.
+
+The drawings step through plans, sections, structural load distribution, environmental analysis, fire compartmentation under Belgian and UK regulations, and hempcrete sourcing, including a 1:5 detail that proposes two ways to mitigate the cold bridge present in the architects' existing detail.
+
+The study sits alongside my own design work as the technical lens it deserves: the same problems (adaptive reuse, material reuse, climate) examined through someone else's resolution before being argued in my own.`,
+    heroImage: '/images/projects/holistic-hero',
+    images: [
+      '/images/projects/holistic-1',
+      '/images/projects/holistic-2',
+      '/images/projects/holistic-3',
+      '/images/projects/holistic-4',
+      '/images/projects/holistic-5',
+      '/images/projects/holistic-6',
+      '/images/projects/holistic-7',
+      '/images/projects/holistic-8',
+      '/images/projects/holistic-9',
     ]
   }
 }

@@ -13,7 +13,8 @@ function Navigation() {
     <nav className="nav">
       <div className="nav-inner">
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          Rawand Hoshyar
+          <span className="nav-logo-mark">RH</span>
+          <span className="nav-logo-name">Rawand Hoshyar</span>
         </Link>
         
         <button 
